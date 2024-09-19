@@ -130,3 +130,62 @@ Once the port status on each side is turned on, you should be able to communicat
 The finished network can be seen here:
 
 <img width="893" alt="Screenshot 2024-09-18 at 10 58 39 PM" src="https://github.com/user-attachments/assets/07acccfc-dbd6-43ee-9237-3c611d5a57b9">
+
+
+
+
+
+# FAQ
+
+1. What do I try if my LAN isn't working?
+
+There are many issues that relate to your LAN not working as intended. Assuming your first LAN is three end devices connected to a switch here are a few different solutions you can try:
+
+- Check the connections between cables and ports
+- Pinging each device (computer 1 to 2, computer 1 to 3, computer 2 to 3)
+- Check your IP configuration and assignment for typos
+
+Human error makes up a bulk of issues when it comes to setting up a network. Ensuring you have the proper cables connected to the proper ports, network settings such as MacOS's built in firewall are not enabled, and your IP assignments are correct can all help in diagnosing and fixing your LAN issue.
+
+2. How can I test compatibility with the hardware I am choosing?
+
+Cisco Packet Tracer offers a simulation where you can test your hardware, and gain an overhead view of the different connections you are going to be working with. While extremely different in practice, using this application can help you choose applicable and compatible hardware.
+
+3. Apart from my LAN, when I ping end device X, I still don't receive a response. What can I try? How do I diagnose an issue?
+
+While it may be frustrating to not know where your network is going wrong, there is often a very clear reason why issues are arising. Before looking into higher level solutions here are some things to consider and look at:
+
+- Device X has the correct subnet mask, IP Address, and default gateway through -ifconfig and other methods
+- Firewall settings on device X
+- Try using different cables, to ensure there is not an issue with your cable's hardware
+- Checking other devices on the network or WAN to ensure it is not a device specific issue
+- Ping using both IP and DNS to diagnose the issue properlu
+
+These are some common solutions that may help in diagnosing how to fix your network and get it up and running.
+
+4. How do I know if I assigned my IP Addresses correctly?
+
+Each device in this static IP scenario should have a unique IP address within the range specified. As long as your default gateway is set, and duplicates do not exist, your IP addresses should be assigned correctly. It is good practice to start your end devices +1 from your default gateway, and +1 from there for each consecutive end device.
+
+Try communicating with your end devices using ping, and if this still does not work, there may be issues with your subnet. Check this to ensure both addresses are correctly, and lastly check the hardware. If all three of these are correct, alongside your default gateway, your LAN should work as intended, unless there are outside factors like a firewall or device-specific issue.
+
+5. I setup everything, why can't my devices communicate with each other?
+
+Again, human error and hardware issues may be the simplest way to check your work.
+
+- Checking cable connections and the correct ports has been the most frustrating but most common issue I have experienced, and it may be necessary to check this
+- Verifying network settings such as IP address, subnet mask, and default gateway, alongside firewall settings may be beneficial
+- Testing using ping between multiple devices across networks may help to see which devices can communicate with each other
+- Swapping out end devices/hardware/cables to ensure there is a network issue, rather than a hardware issue
+
+# Retrospective
+
+Looking back on the process of not only creating and configuring my first network, but also creating a step-by-step guide to recreate it, my retrospective includes many challenges and a new approach to solving these when they come up in the future.
+
+When moving from Cisco Packet Tracer to actual hardware, I realized how different the two were. Main challenges included, actually finding where the configurations on computers were, firewall issues, connecting end devices to the proper ports, and diagnosing issues related to IP addresses outside of a simulation or vacuum. What I realized, however, through this process, is that technology issues are not as “magical” as I first thought. Going through the steps on the slides over and over again and checking for information, I was able to at a certain point, understand where we had gone wrong, and reapplied the information in a way that was able to solve the issue.
+
+Many of the issues were overcome through reframing the solution in our previous simulation, and then trying to find the steps to complete it on the specific computer that was acting as an end device. What I learned from this was that issues within a network are almost always diagnosable, and issues can even tell you where they are going wrong. Rather than looking at an issue, and trying to instantly have the solution, it is better to ask questions and solve from there. Questions like, “Is my default gateway configured?” “Can I ping other devices on the network?” and “Are my IP addresses configured correctly?” Are all possible solutions or variations on the same ping failure issue, and after walking through the issues enough times, I think my biggest insight through this project is my ability to diagnose my own issues.
+
+The biggest improvement or future change I can offer is to not give up so easily when working on a network. A lot of the time when trying to diagnose issues, I felt lost because the solution felt very far away, and in a way I would not be able to solve. My main area for improvement is likely related to a belief and methodology for solving and diagnosing issues, which is something I feel is much more achievable after this project. Through creating a step-by-step guide, I feel I now understand the process of creating a network better, and can diagnose my own issues better if faced with the same hardware.
+
+Many of the issues I took away from this project ended up being the questions I used in my “FAQ” section. I feel that many of the issues I had originally run into with my group, could have been diagnosed with enough effort by ourselves. In the future I seek to be able to bring a solution-oriented mindset to future projects and assignments, even when I may not know the answer. Using online resources, we were able to find information such as where to change an IP address on a Mac, how to properly designate a subnet, and the differences between which computers get which IP addresses. Knowing that we can find the solution to issues, and diagnosing the actual issue is often the hardest part, I will carry this improvement with me into future projects, and I believe that it is also a great insight I gained through this.
