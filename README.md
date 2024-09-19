@@ -1,4 +1,11 @@
 # Network Step-By-Step Configuration Guide
+
+This guide seeks to offer a step-by-step configuration guide for a Wide Area Network, connected by two Local Area Networks. This represents a relatively basic network, but one that allows internet access, shared information across LAN's, and a network made up of two smaller networks.
+
+These networks also provide multiple real-world use cases. Interdepartmental communication through end devices communicating through a shared router is one example. Through having multiple computers connecting to a switch, connecting eventually then to a router, they can find and send information across their LAN to another department, through their shared access of a central router.
+
+Connected PrintMe printers on university campuses is also a use case. Through connecting to the same WiFi network, or router, a student's wireless access device and the printer can share information, eventually leading to a printed assignment. Sharing a router between switches in this way allows for a WAN that combines smaller LAN's.
+
 1. Choose software and hardware
 
 Software and Hardware chosen should be compatible, and is the first step in creating and configuring a network. Hardware choices include information such as the devices you will use, in this scenario being routers, switches, end devices such as computers, mobile devices, or tablets, cables such as ethernet fiber optic cables, and wireless access points for wireless devices. Choosing between software such as operating systems for Mac or Windows is also important for this step, as configuration for some steps may differ depending on usage of your specific operating system. In this step, it may also help to use a tool such as Cisco Packet Tracer to ensure compatibility and test within a simulation your devices and connections.
@@ -67,7 +74,7 @@ Default Gateway: 192.168.0.1
 
 <img width="250" alt="Screenshot 2024-09-18 at 10 49 06 PM" src="https://github.com/user-attachments/assets/e3ad7534-690b-43b5-b984-89d67976415b">
 
-For MacOS these settings can be found in the TCP/IP tab under network. After setting IPv4 to manual, this informatio ncan be changed.
+For MacOS these settings can be found in the TCP/IP tab under network. After setting IPv4 to manual, this information can be changed.
 
 Similarly, Windows can be found under TCP/IPv4 under network adapter Properties.
 
@@ -93,7 +100,7 @@ Default Gateway: 172.16.0.1
 
 <img width="197" alt="Screenshot 2024-09-18 at 10 49 25 PM" src="https://github.com/user-attachments/assets/8483c0d2-da27-4c59-9e25-b228ffa3785f">
 
-Now that we have ensured two seperate LAN's, we can try to connect the two using a router.
+Now that we have ensured two separate LAN's, we can try to connect the two using a router.
 
 10. Add a router to talk to different networks
 
