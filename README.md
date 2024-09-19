@@ -122,4 +122,4 @@ Once the port status on each side is turned on, you should be able to communicat
 
 The finished network can be seen here:
 
-![System_Architecture_Diagram](https://github.com/user-attachments/assets/3c5745b7-96ba-4ee8-85e3-dd70e43f3bf8)
+<img width="893" alt="Screenshot 2024-09-18 at 10 58 39 PM" src="https://github.com/user-attachments/assets/07acccfc-dbd6-43ee-9237-3c611d5a57b9">
